@@ -15,6 +15,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void click(View view) {
-        Toast.makeText(this, "Herro", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "racist", Toast.LENGTH_SHORT).show();
     }
 }
