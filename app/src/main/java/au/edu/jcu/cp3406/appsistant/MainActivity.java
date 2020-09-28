@@ -13,8 +13,4 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
-
-    public void click(View view) {
-        Toast.makeText(this, "racist", Toast.LENGTH_SHORT).show();
-    }
 }

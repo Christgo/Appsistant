@@ -8,14 +8,53 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/appsistant_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        android:onClick="click" />
+        android:text="Appsistant"
+        android:textAlignment="center"
+        android:textSize="30sp" />
+    <Button
+        android:id="@+id/calendar_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calendar" />
 
-    <TextView
+    <Button
+        android:id="@+id/camera_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:text="Camera" />
+
+    <Button
+        android:id="@+id/clock_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Clock" />
+
+    <Button
+        android:id="@+id/contacts_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Contacts" />
+
+    <Button
+        android:id="@+id/email_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Email" />
+
+    <Button
+        android:id="@+id/gallery_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gallery" />
+
+    <Button
+        android:id="@+id/messages_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Messages" />
+
 
 </androidx.appcompat.widget.LinearLayoutCompat>
