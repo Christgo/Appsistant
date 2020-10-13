@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ClockActivity" >
+
+    <Button
+        android:id="@+id/alarm_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Set an alarm" />
+
+    <Button
+        android:id="@+id/timer_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Set a timer" />
+
+    <Button
+        android:id="@+id/world_clock_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="World clocks" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>
