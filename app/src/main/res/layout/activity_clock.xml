@@ -17,7 +17,8 @@
         android:id="@+id/timer_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Set a timer" />
+        android:text="Set a timer"
+        android:onClick="onTimerButtonClicked" />
 
     <Button
         android:id="@+id/world_clock_button"
