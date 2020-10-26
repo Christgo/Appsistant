@@ -5,7 +5,6 @@ import android.app.AlertDialog;
 import android.app.PendingIntent;
 import android.app.TimePickerDialog;
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -16,9 +15,11 @@ import android.widget.TextView;
 import android.widget.TimePicker;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import java.util.Calendar;
 
-public class AlarmClock extends AppCompatActivity{
+public class AlarmClock extends AppCompatActivity {
     Button addAlarmButton;
     Button cancelButton;
     ListView alarmList;
@@ -31,9 +32,9 @@ public class AlarmClock extends AppCompatActivity{
     @Override
     public void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.alarmclocklayout);
 
-        alarmList = (ListView)findViewById(R.id.alarmList);
+//        alarmList = (ListView)findViewById(R.id.alarmList);
         bindViews();
 
     }
@@ -72,6 +73,11 @@ public class AlarmClock extends AppCompatActivity{
                     }
                 },currenTime.get(Calendar.HOUR_OF_DAY),currenTime.get(Calendar.MINUTE),false).show();
                 cancelButton.setVisibility(View.VISIBLE);
+                break;
+            case R.id.cancelButton:
+                alarmManager.cancel(pendingIntent);
+                cancelButton.setVisibility(View.GONE);
+                Toast.makeText(AlarmClock.this, "Alarm has been canceled", Toast.LENGTH_SHORT).show();
                 break;
         }
     }
