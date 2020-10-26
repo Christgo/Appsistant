@@ -50,7 +50,7 @@ public class TimerActivity extends AppCompatActivity {
         isRunning = false;
     }
 
-    public void onResetButtonClicked() {
+    public void onResetButtonClicked(View view) {
         isRunning = false;
         seconds = 0;
     }
