@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/all_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ListView
+        android:id="@+id/alarmList"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:footerDividersEnabled="true"
+        android:headerDividersEnabled="true">
+
+    </ListView>
+
+    <Button
+        android:id="@+id/addAlarmButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add alarm"
+        android:textAlignment="center"
+        android:textSize="24dp"/>
+
+    <Button
+        android:id="@+id/cancelButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="cancel alarm"
+        android:textAlignment="center"
+        android:textSize="24dp"/>
+
+</LinearLayout>
