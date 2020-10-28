@@ -19,7 +19,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.Calendar;
 
-public class AlarmClock extends AppCompatActivity {
+public class AlarmClock extends AppCompatActivity implements View.OnClickListener {
     Button addAlarmButton;
     Button cancelButton;
     ListView alarmList;
@@ -44,11 +44,12 @@ public class AlarmClock extends AppCompatActivity {
         addAlarmButton = (Button)findViewById(R.id.addAlarmButton);
         cancelButton = (Button)findViewById(R.id.cancelButton);
 
-        Intent intent = new Intent(AlarmClock.this, ClockActivity.class);
-        pendingIntent = PendingIntent.getActivity(AlarmClock.this,0,intent,0);
+        Intent intent = new Intent(AlarmClock.this, AlarmPage.class);
+//        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        pendingIntent = PendingIntent.getActivity(AlarmClock.this,0,intent, 0);
 
-//        addAlarmButton.setOnClickListener(this);
-//        cancelButton.setOnClickListener(this);
+        addAlarmButton.setOnClickListener(this);
+        cancelButton.setOnClickListener(this);
     }
 
     public void onClick(View view){

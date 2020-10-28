@@ -23,7 +23,7 @@
         android:layout_height="wrap_content"
         android:text="Add alarm"
         android:textAlignment="center"
-        android:textSize="24dp"/>
+        android:textSize="24dp" />
 
     <Button
         android:id="@+id/cancelButton"
@@ -31,6 +31,6 @@
         android:layout_height="wrap_content"
         android:text="cancel alarm"
         android:textAlignment="center"
-        android:textSize="24dp"/>
+        android:textSize="24dp" />
 
 </LinearLayout>
