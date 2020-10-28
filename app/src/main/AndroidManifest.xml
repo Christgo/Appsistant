@@ -13,13 +13,20 @@
         android:appComponentFactory="any"
         tools:replace="android:appComponentFactory">
         <activity android:name=".AlarmClock" />
-        <activity android:name=".ClockActivity" />
         <activity android:name=".AlarmPage" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
+                <action android:name="contact1"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".ViewContacts">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+                <action android:name="contact1"/>
             </intent-filter>
         </activity>
         <activity android:name=".TimerActivity" />

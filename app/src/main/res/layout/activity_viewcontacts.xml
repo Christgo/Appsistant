@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/contactsPage" >
+
+    <TextView
+        android:id="@+id/contactsTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Contacts"
+        android:textSize="52dp"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/contact1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="showContactsDetail"
+        android:text="Bob"
+        android:textAlignment="center"
+        android:textSize="32dp" />
+
+    <Button
+        android:id="@+id/contact2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="showContactsDetail1"
+        android:text="Brandon"
+        android:textAlignment="center"
+        android:textSize="32dp" />
+
+    <Button
+        android:id="@+id/contact3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="showContactsDetail2"
+        android:text="Ellison"
+        android:textAlignment="center"
+        android:textSize="32dp" />
+
+    <Button
+        android:id="@+id/contact4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="showContactsDetail3"
+        android:text="James"
+        android:textAlignment="center"
+        android:textSize="32dp" />
+</androidx.appcompat.widget.LinearLayoutCompat>
