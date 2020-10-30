@@ -21,22 +21,10 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".ViewContacts">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-                <action android:name="contact1"/>
-            </intent-filter>
-        </activity>
-
-        <activity android:name=".AlarmClock">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-                <action android:name="contact1"/>
-            </intent-filter>
-        </activity>
+        <activity android:name=".ViewContacts"/>
+        <activity android:name=".Alarm"/>
         <activity android:name=".TimerActivity" />
+        <activity android:name=".ClockActivity"/>
     </application>
 
 </manifest>
