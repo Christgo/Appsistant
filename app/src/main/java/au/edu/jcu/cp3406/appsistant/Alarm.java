@@ -1,17 +1,14 @@
 package au.edu.jcu.cp3406.appsistant;
 
 import android.app.AlarmManager;
-import android.app.AlertDialog;
 import android.app.PendingIntent;
 import android.app.TimePickerDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ListView;
-import android.widget.TextView;
 import android.widget.TimePicker;
 import android.widget.Toast;
 
@@ -19,7 +16,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.Calendar;
 
-public class AlarmClock extends AppCompatActivity implements View.OnClickListener {
+public class Alarm extends AppCompatActivity implements View.OnClickListener {
     Button addAlarmButton;
     Button cancelButton;
     ListView alarmList;
@@ -44,9 +41,9 @@ public class AlarmClock extends AppCompatActivity implements View.OnClickListene
         addAlarmButton = (Button)findViewById(R.id.addAlarmButton);
         cancelButton = (Button)findViewById(R.id.cancelButton);
 
-        Intent intent = new Intent(AlarmClock.this, AlarmPage.class);
+        Intent intent = new Intent(Alarm.this, AlarmPage.class);
 //        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        pendingIntent = PendingIntent.getActivity(AlarmClock.this,0,intent, 0);
+        pendingIntent = PendingIntent.getActivity(Alarm.this,0,intent, 0);
 
         addAlarmButton.setOnClickListener(this);
         cancelButton.setOnClickListener(this);
@@ -56,7 +53,7 @@ public class AlarmClock extends AppCompatActivity implements View.OnClickListene
         switch (view.getId()){
             case R.id.addAlarmButton:
                 Calendar currenTime = Calendar.getInstance();
-                new TimePickerDialog(AlarmClock.this, 0, new TimePickerDialog.OnTimeSetListener() {
+                new TimePickerDialog(Alarm.this, 0, new TimePickerDialog.OnTimeSetListener() {
                     @Override
                     public void onTimeSet(TimePicker view, int hourOfDay, int minute) {
                     //setting a time for alarm
@@ -69,7 +66,7 @@ public class AlarmClock extends AppCompatActivity implements View.OnClickListene
                         alarmManager.set(AlarmManager.RTC_WAKEUP,currenTime.getTimeInMillis(),pendingIntent);
                         Log.e("Here", currenTime.getTimeInMillis()+"");
                         //prompt users alarm setting complete
-                        Toast.makeText(AlarmClock.this,"The Alarm is Set!" + currenTime.getTimeInMillis(),
+                        Toast.makeText(Alarm.this,"The Alarm is Set!" + currenTime.getTimeInMillis(),
                                 Toast.LENGTH_SHORT).show();
                     }
                 },currenTime.get(Calendar.HOUR_OF_DAY),currenTime.get(Calendar.MINUTE),false).show();
@@ -78,7 +75,7 @@ public class AlarmClock extends AppCompatActivity implements View.OnClickListene
             case R.id.cancelButton:
                 alarmManager.cancel(pendingIntent);
                 cancelButton.setVisibility(View.GONE);
-                Toast.makeText(AlarmClock.this, "Alarm has been canceled", Toast.LENGTH_SHORT).show();
+                Toast.makeText(Alarm.this, "Alarm has been canceled", Toast.LENGTH_SHORT).show();
                 break;
         }
     }
