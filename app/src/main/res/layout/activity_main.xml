@@ -20,49 +20,49 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/calendar"
-        android:onClick="onClick"/>
+        android:onClick="onClickMain"/>
 
     <Button
         android:id="@+id/camera_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/camera"
-        android:onClick="onClick"/>
+        android:onClick="onClickMain"/>
 
     <Button
         android:id="@+id/clock_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/clock"
-        android:onClick="onClick"/>
+        android:onClick="onClickMain"/>
 
     <Button
         android:id="@+id/contacts_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/contacts"
-        android:onClick="onClick"/>
+        android:onClick="onClickMain"/>
 
     <Button
         android:id="@+id/email_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/email"
-        android:onClick="onClick"/>
+        android:onClick="onClickMain"/>
 
     <Button
         android:id="@+id/gallery_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/gallery"
-        android:onClick="onClick"/>
+        android:onClick="onClickMain"/>
 
     <Button
         android:id="@+id/messages_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/messages"
-        android:onClick="onClick"/>
+        android:onClick="onClickMain"/>
 
 
 </androidx.appcompat.widget.LinearLayoutCompat>

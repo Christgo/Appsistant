@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    public void onClick(View view) {
+    public void onClickMain(View view) {
         Intent intent;
         switch (view.getId()) { //Cases will be filled as activities are created
             case R.id.calendar_button:
