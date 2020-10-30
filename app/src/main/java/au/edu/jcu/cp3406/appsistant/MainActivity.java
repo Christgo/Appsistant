@@ -27,6 +27,8 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
                 break;
             case R.id.contacts_button:
+                intent = new Intent(this, ViewContacts.class);
+                startActivity(intent);
                 break;
             case R.id.email_button:
                 break;
