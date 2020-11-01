@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Contacts"
+        android:textSize="52dp"
+        android:textAlignment="center"
+        />
+
+    <Button
+        android:id="@+id/contact1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bob"
+        android:textAlignment="center"
+        android:textSize="32dp" />
+
+
+    <Button
+        android:id="@+id/contact2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Brandon"
+        android:textAlignment="center"
+        android:textSize="32dp" />
+
+
+    <Button
+        android:id="@+id/contact3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ellison"
+        android:textAlignment="center"
+        android:textSize="32dp" />
+
+
+    <Button
+        android:id="@+id/contact4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="James"
+        android:textAlignment="center"
+        android:textSize="32dp" />
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="239dp">
+
+    </ListView>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="Add new contacts"
+        android:textAlignment="center" />
+</LinearLayout>

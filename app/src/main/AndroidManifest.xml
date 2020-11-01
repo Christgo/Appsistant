@@ -12,13 +12,25 @@
         android:theme="@style/AppTheme"
         android:appComponentFactory="any"
         tools:replace="android:appComponentFactory">
-        <activity android:name=".AlarmClock">
+        <activity android:name=".AlarmPage" />
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
+                <action android:name="contact1"/>
             </intent-filter>
         </activity>
+        <activity android:name=".AddContacts">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+                <action android:name="contact1"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".ViewContacts"/>
+        <activity android:name=".Alarm"/>
+        <activity android:name=".TimerActivity" />
+        <activity android:name=".ClockActivity"/>
     </application>
 
 </manifest>
